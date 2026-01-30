@@ -1,5 +1,6 @@
 💫 About GSDM:
 
+
 The GeoSocial Downscaling Model (GSDM) is a Spatial AI research project that reconstructs fine-scale urban accessibility patterns from coarse-grained mobility data. The project develops physics-guided deep learning methods that enable high-resolution (~500 m) accessibility estimation while preserving macro-level consistency constraints.
 
 GSDM is designed to support research and decision-making in urban resilience, environmental justice, and equitable service provision. The project emphasizes open science, FAIR data principles, and reproducible Spatial AI workflows, and is developed as part of the Spatial AI Challenge 2025–26, hosted on the I-GUIDE Platform.
@@ -8,7 +9,8 @@ All experiments are executed on GPU-enabled cloud infrastructure (Jetstream2), a
 _____________________________________________________
 
 
-📈 Projects
+📈 Projects:
+
 
 GeoSocial Downscaling of Urban Mobility
 
@@ -34,7 +36,8 @@ The initial case study focuses on São Paulo, Brazil, but the framework is desig
 __________________________________________________________
 
 
-💻 Tech Stack
+💻 Tech Stack:
+
 
 Python · Jupyter · PyTorch · TensorFlow · NumPy · Pandas · SciPy · Plotly ·
 
@@ -49,20 +52,39 @@ Jetstream2 · I-GUIDE Platform · GPU Computing ·
 Git · GitHub · GitHub Actions · FAIR Workflows
 ___________________________
 
-📊 Core Pipelines
+
+📊 Core Pipelines:
+
 
 The GSDM workflow is organized into four modular pipelines implemented as Jupyter notebooks:
-Pipeline A — Mobility Processing
-Aggregation, normalization, and preparation of national-scale mobility data.
-Pipeline S — Spatial Integration
-Integration of mobility data with socioeconomic and built-environment covariates.
-Pipeline V — Validation
-Aggregate consistency checks, distributional fidelity analysis, and spatial error diagnostics.
-Pipeline D — Downscaling
-Physics-guided U-Net implementation for high-resolution accessibility estimation.
-These pipelines define the complete Spatial AI workflow from raw data to validated outputs.
 
-👩‍🚀 Team Members
+Pipeline A — Mobility Processing
+
+Aggregation, normalization, and preparation of national-scale mobility data.
+
+
+Pipeline S — Spatial Integration
+
+Integration of mobility data with socioeconomic and built-environment covariates.
+
+
+Pipeline V — Validation
+
+Aggregate consistency checks, distributional fidelity analysis, and spatial error diagnostics.
+
+
+Pipeline D — Downscaling
+
+Physics-guided U-Net implementation for high-resolution accessibility estimation.
+
+
+These pipelines define the complete Spatial AI workflow from raw data to validated outputs.
+_____________________________________
+
+
+👩‍🚀 Team Members:
+
+
 Name	Role	Institution
 
 Siqin Wang	Lead Researcher	University of Southern California
