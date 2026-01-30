@@ -58,22 +58,22 @@ ___________________________
 
 The GSDM workflow is organized into four modular pipelines implemented as Jupyter notebooks:
 
-Pipeline A — Mobility Processing
+· Pipeline A — Mobility Processing
 
 Aggregation, normalization, and preparation of national-scale mobility data.
 
 
-Pipeline S — Spatial Integration
+· Pipeline S — Spatial Integration
 
 Integration of mobility data with socioeconomic and built-environment covariates.
 
 
-Pipeline V — Validation
+· Pipeline V — Validation
 
 Aggregate consistency checks, distributional fidelity analysis, and spatial error diagnostics.
 
 
-Pipeline D — Downscaling
+· Pipeline D — Downscaling
 
 Physics-guided U-Net implementation for high-resolution accessibility estimation.
 
