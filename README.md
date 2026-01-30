@@ -39,9 +39,13 @@ These pipelines define the complete Spatial AI workflow from raw data to validat
 
 👩‍🚀 Team Members
 Name	Role	Institution
+
 Siqin Wang	Lead Researcher	University of Southern California
+
 Jessica Miranda	Researcher	Federal University of Rio Grande do Sul
+
 Rafael Albuquerque	Researcher	Federal University of Rio Grande do Sul
+
 Vinicius Brei	Principal Investigator	Federal University of Rio Grande do Sul
 
 🏢 Support & Infrastructure
