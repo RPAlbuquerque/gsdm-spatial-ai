@@ -1,6 +1,4 @@
-GeoSocial Downscaling Model (GSDM)
-
-💫 About GSDM
+💫 About GSDM:
 
 The GeoSocial Downscaling Model (GSDM) is a Spatial AI research project that reconstructs fine-scale urban accessibility patterns from coarse-grained mobility data. The project develops physics-guided deep learning methods that enable high-resolution (~500 m) accessibility estimation while preserving macro-level consistency constraints.
 
@@ -18,24 +16,40 @@ A Spatial AI Framework for High-Resolution Service Accessibility
 
 This project introduces a physics-guided U-Net architecture that downscales aggregated mobility flows into fine-grained accessibility surfaces while enforcing macro–micro consistency. The framework integrates national mobility indicators with socioeconomic and built-environment covariates, without relying on social media or individual behavioral traces.
 
+
 Key outputs include:
 
 High-resolution accessibility surfaces (~100 m)
+
 Validated downscaling pipelines
+
 Containerized and GPU-ready workflows
+
 Pre-trained models and configuration files
+
 A Spatial AI Model Card with ethical and methodological documentation
+
 The initial case study focuses on São Paulo, Brazil, but the framework is designed for transferability across urban contexts.
+__________________________________________________________
+
 
 💻 Tech Stack
+
 Python · Jupyter · PyTorch · TensorFlow · NumPy · Pandas · SciPy · Plotly ·
+
 GeoPandas · Rasterio · Xarray · NetCDF ·
+
 Docker · Singularity · YAML · Shell Script ·
+
 U-Net · Physics-Guided Neural Networks ·
+
 Jetstream2 · I-GUIDE Platform · GPU Computing ·
+
 Git · GitHub · GitHub Actions · FAIR Workflows
+___________________________
 
 📊 Core Pipelines
+
 The GSDM workflow is organized into four modular pipelines implemented as Jupyter notebooks:
 Pipeline A — Mobility Processing
 Aggregation, normalization, and preparation of national-scale mobility data.
