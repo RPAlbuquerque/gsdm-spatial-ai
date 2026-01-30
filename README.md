@@ -29,6 +29,7 @@ Key outputs include:
 
 · A Spatial AI Model Card with ethical and methodological documentation
 
+
 The initial case study focuses on São Paulo, Brazil, but the framework is designed for transferability across urban contexts.
 __________________________________________________________
 
