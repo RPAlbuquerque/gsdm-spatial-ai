@@ -19,15 +19,15 @@ This project introduces a physics-guided U-Net architecture that downscales aggr
 
 Key outputs include:
 
-High-resolution accessibility surfaces (~100 m)
+· High-resolution accessibility surfaces (~100 m)
 
-Validated downscaling pipelines
+· Validated downscaling pipelines
 
-Containerized and GPU-ready workflows
+· Containerized and GPU-ready workflows
 
-Pre-trained models and configuration files
+· Pre-trained models and configuration files
 
-A Spatial AI Model Card with ethical and methodological documentation
+· A Spatial AI Model Card with ethical and methodological documentation
 
 The initial case study focuses on São Paulo, Brazil, but the framework is designed for transferability across urban contexts.
 __________________________________________________________
