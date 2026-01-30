@@ -86,7 +86,7 @@ _____________________________________
 
 | Picture | Name | Role | Institution |
 |--------|------|------|-------------|
-| <img src="assets/team/Wang.jpg" width="80"/> | **Siqin Wang** | Lead Researcher | University of Southern California |
+| <img src="assets/team/Wang.jpg" width="80"/> | **Siqin Wang** | Lead Researcher & PI | University of Southern California |
 | <img src="assets/team/Miranda.jpg" width="80"/> | **Jessica Miranda** | Researcher | Federal University of Rio Grande do Sul |
 | <img src="assets/team/Albuquerque.jpeg" width="80"/> | **Rafael Albuquerque** | Researcher | Federal University of Rio Grande do Sul |
 | <img src="assets/team/Brei.jpg" width="80"/> | **Vinicius Brei** | Principal Investigator | Federal University of Rio Grande do Sul |
