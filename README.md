@@ -94,17 +94,31 @@ Jessica Miranda	Researcher	Federal University of Rio Grande do Sul
 Rafael Albuquerque	Researcher	Federal University of Rio Grande do Sul
 
 Vinicius Brei	Principal Investigator	Federal University of Rio Grande do Sul
+____________________________________________
+
 
 🏢 Support & Infrastructure
+
+
 This project is developed and executed using resources provided by:
+
 I-GUIDE Platform
+
 Jetstream2 Cloud Infrastructure
+
 Federal University of Rio Grande do Sul (UFRGS)
+
 University of Southern California
+______________________________________
 
-📄 License
+📄 License:
+
 This project is released under the MIT License.
+______________________________________
 
-📚 Citation
+
+📚 Citation:
+
 Citation information is available in the CITATION.cff file.
+
 If you use this project, please cite accordingly.
