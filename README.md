@@ -1,7 +1,8 @@
 GeoSocial Downscaling Model (GSDM)
 
 💫 About GSDM
-The GeoSocial Downscaling Model (GSDM) is a Spatial AI research project focused on reconstructing fine-scale urban accessibility patterns from coarse-grained mobility data. The project develops physics-guided deep learning methods that enable high-resolution (~500 m) accessibility estimation while preserving macro-level consistency constraints.
+
+The GeoSocial Downscaling Model (GSDM) is a Spatial AI research project that reconstructs fine-scale urban accessibility patterns from coarse-grained mobility data. The project develops physics-guided deep learning methods that enable high-resolution (~500 m) accessibility estimation while preserving macro-level consistency constraints.
 GSDM is designed to support research and decision-making in urban resilience, environmental justice, and equitable service provision. The project emphasizes open science, FAIR data principles, and reproducible Spatial AI workflows, and is developed as part of the Spatial AI Challenge 2025–26, hosted on the I-GUIDE Platform.
 All experiments are executed on GPU-enabled cloud infrastructure (Jetstream2), and the full modeling pipeline is openly documented and containerized.
 _____________________________________________________
