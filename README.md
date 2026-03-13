@@ -1,86 +1,118 @@
-## 💫 About GSDM:
+# From Mobility Intensity to Market Infrastructure
 
+## A Spatial AI Framework for Recovering Hidden Regime Structure and Multiscale Variation
 
-The GeoSocial Downscaling Model (GSDM) is a Spatial AI research project that reconstructs fine-scale urban accessibility patterns from coarse-grained mobility data. The project develops physics-guided deep learning methods that enable high-resolution (~500 m) accessibility estimation while preserving macro-level consistency constraints.
+This repository contains the analytical workflow, notebooks, and supporting materials for the project **From Mobility Intensity to Market Infrastructure**.
 
-GSDM is designed to support research and decision-making in urban resilience, environmental justice, and equitable service provision. The project emphasizes open science, FAIR data principles, and reproducible Spatial AI workflows, and is developed as part of the Spatial AI Challenge 2025–26, hosted on the I-GUIDE Platform.
+The project addresses a central question: **can a latent spatial infrastructure of markets be recovered from the behavioral covariance structure of human mobility signals, and does this infrastructure explain spatial differences in local economic intensity?**
 
-All experiments are executed on GPU-enabled cloud infrastructure (Jetstream2), and the full modeling pipeline is openly documented and containerized.
+Using large-scale mobility data from Brazil, the project constructs a **Market Infrastructure Index (MII)** from the dominant covariance structure of visitation behavior, identifies **spatially differentiated infrastructure regimes**, evaluates their **economic differentiation** using VIIRS nighttime light intensity, and reconstructs **fine-scale intra-tract variation** through mass-preserving downscaling.
+
 _____________________________________________________
 
+## 💫 Project Framing
 
-## 📈 Projects:
+Nearby locations often exhibit similar levels of mobility intensity while sustaining markedly different levels of local economic activity. This project argues that **mobility intensity alone does not capture the spatial conditions associated with repeated access, stable visitation, and sustained local activity**.
 
+We use the term **market infrastructure** in a specific and cautious sense. It does **not** refer only to physical infrastructure such as roads, utilities, or buildings, and it does **not** directly measure market outcomes. Instead, it refers to the **underlying spatial conditions reflected in mobility patterns** that support repeated access, stable visitation, and sustained local interaction in ways consistent with stronger **local economic intensity**.
 
-GeoSocial Downscaling of Urban Mobility
+Under this framing, mobility does not merely indicate how many people move through a place. It also reflects whether visitation is organized in patterns consistent with **repeated exposure, local return, and temporal regularity**. The project therefore treats mobility not simply as traffic, but as a **structured spatial phenomenon**.
 
-A Spatial AI Framework for High-Resolution Service Accessibility
+This repository was developed as part of the **Spatial AI Challenge 2025–26** hosted on the **I-GUIDE Platform** and emphasizes **open science**, **FAIR data principles**, and **reproducible Spatial AI workflows**.
 
-This project introduces a physics-guided U-Net architecture that downscales aggregated mobility flows into fine-grained accessibility surfaces while enforcing macro–micro consistency. The framework integrates national mobility indicators with socioeconomic and built-environment covariates, without relying on social media or individual behavioral traces.
+_____________________________________________________
 
+## 📈 What This Project Does
 
-Key outputs include:
+This project develops a Spatial AI framework that:
 
-· High-resolution accessibility surfaces (~100 m)
+- constructs **tract-level behavioral mobility indicators**
+- recovers a **Market Infrastructure Index (MII)** from the covariance structure of visitation behavior
+- identifies **mobility infrastructure regimes** through localized covariance analysis
+- evaluates their economic differentiation using **VIIRS nighttime light intensity**
+- reconstructs **multiscale spatial variation** through **mass-preserving downscaling**
 
-· Validated downscaling pipelines
+The national analysis covers **Brazil** using official **IBGE census tracts** as the primary spatial unit. The multiscale reconstruction component focuses on the **São Paulo metropolitan region**, where tract-level aggregation can conceal substantial internal heterogeneity.
 
-· Containerized and GPU-ready workflows
+_____________________________________________________
 
-· Pre-trained models and configuration files
+## 🌟 Main Contributions
 
-· A Spatial AI Model Card with ethical and methodological documentation
+This project makes three primary contributions:
 
+1. It introduces a **reproducible Spatial AI framework** for recovering a latent mobility-based infrastructural dimension from large-scale mobility traces.
+2. It shows that mobility-based market infrastructure is **spatially heterogeneous** and organized into **distinct spatial regimes** rather than reducible to a single gradient of visitation.
+3. It demonstrates that these structures can be reconstructed at finer spatial resolutions through **mass-preserving downscaling**, making otherwise hidden intra-tract variation empirically visible.
 
-The initial case study focuses on São Paulo, Brazil, but the framework is designed for transferability across urban contexts.
-__________________________________________________________
+_____________________________________________________
 
+## 📊 Repository Structure
 
-## 💻 Tech Stack:
+### Notebooks
 
+- **1 - Pipeline A (Mobility).ipynb**  
+  Constructs tract-level behavioral mobility indicators from raw mobility traces, including visitation intensity, visitor diversity, repeat visitation, dwell time, and temporal stability.
 
-Python · Jupyter · PyTorch · TensorFlow · NumPy · Pandas · SciPy · Plotly ·
+- **2 - Pipeline S (Spatial Integration).ipynb**  
+  Integrates the mobility indicators with official 2022 IBGE census tract geometries and produces the national tract-level spatial base.
 
-GeoPandas · Rasterio · Xarray · NetCDF ·
+- **3 - Pipeline V (Validation).ipynb**  
+  Evaluates the internal consistency, robustness, and distinctiveness of the mobility construct through statistical diagnostics and validation procedures.
 
-Docker · Singularity · YAML · Shell Script ·
+- **4 - Pipeline D (Downscaling).ipynb**  
+  Implements the mass-preserving spatial downscaling procedure used to reconstruct fine-resolution infrastructure patterns within census tracts.
 
-U-Net · Physics-Guided Neural Networks ·
-
-Jetstream2 · I-GUIDE Platform · GPU Computing ·
-
-Git · GitHub · GitHub Actions · FAIR Workflows
-___________________________
-
-
-## 📊 Core Pipelines:
-
-
-The GSDM workflow is organized into four modular pipelines implemented as Jupyter notebooks:
-
-· Pipeline A — Mobility Processing
-
-Aggregation, normalization, and preparation of national-scale mobility data.
-
-
-· Pipeline S — Spatial Integration
-
-Integration of mobility data with socioeconomic and built-environment covariates.
+- **5 - Pipeline X (Spatial Structural Regime Modeling (GW-PCA)).ipynb**  
+  Recovers localized covariance structure, estimates spatially varying mobility organization, and identifies mobility infrastructure regimes.
 
 
-· Pipeline V — Validation
+- **from_mobility_intensity_to_market_infrastructure_spatial_ai.ipynb**  
+  Final integrated notebook presenting the analytical workflow, empirical results, figures, maps, and narrative structure of the project.
 
-Aggregate consistency checks, distributional fidelity analysis, and spatial error diagnostics.
+### Supporting Files
 
+- **Data Dictionary - Human Mobility.xlsx**  
+  Data dictionary describing the human mobility variables used in the project.
 
-· Pipeline D — Downscaling
+- **assets/**  
+  Folder containing figures, visual materials, and team images used in the repository.
 
-Physics-guided U-Net implementation for high-resolution accessibility estimation.
+_____________________________________________________
 
+## 🔄 Core Analytical Logic
 
-These pipelines define the complete Spatial AI workflow from raw data to validated outputs.
-_____________________________________
+The project follows the logic below:
 
+**human mobility signals**  
+→ **behavioral indicators**  
+→ **covariance structure**  
+→ **Market Infrastructure Index (MII)**  
+→ **spatial regimes**  
+→ **economic validation with VIIRS**  
+→ **multiscale reconstruction through downscaling**
+
+_____________________________________________________
+
+## 🌍 Data Sources
+
+The analysis combines three main data sources:
+
+- **Human mobility data** aggregated to the census tract level
+- **IBGE 2022 census tract geometries**
+- **VIIRS nighttime light emissions** as an external proxy for **local economic intensity**
+
+_____________________________________________________
+
+## 🚀 Recommended Entry Points
+
+If you are new to the repository, start here:
+
+1. **from_mobility_intensity_to_market_infrastructure_spatial_ai.ipynb** — integrated analytical narrative
+2. **1 - Pipeline A (Mobility).ipynb** — indicator construction
+3. **5 - Pipeline X (Spatial Structural Regime Modeling (GW-PCA)).ipynb** — core spatial structural modeling
+4. **4 - Pipeline D (Downscaling).ipynb** — multiscale reconstruction
+
+_____________________________________________________
 
 ## 👩‍🚀 Team Members
 
@@ -88,34 +120,32 @@ _____________________________________
 |--------|------|------|-------------|
 | <img src="assets/team/Wang.jpg" width="80"/> | **Siqin Wang** | Lead Researcher & PI | University of Southern California, USA |
 | <img src="assets/team/Miranda.jpg" width="80"/> | **Jessica Miranda** | Researcher | Federal University of Rio Grande do Sul, Brazil |
-| <img src="assets/team/Albuquerque.jpeg" width="80"/> | **Rafael Albuquerque** | Researcher | Federal University of Rio Grande do Sul, Brazil  |
-| <img src="assets/team/Brei.jpg" width="80"/> | **Vinicius Brei** | Principal Investigator | Federal University of Rio Grande do Sul, Brazil  |
+| <img src="assets/team/Albuquerque.jpeg" width="80"/> | **Rafael Albuquerque** | Researcher | Federal University of Rio Grande do Sul, Brazil |
+| <img src="assets/team/Brei.jpg" width="80"/> | **Vinicius Brei** | Principal Investigator | Federal University of Rio Grande do Sul, Brazil |
 
 ____________________________________________
 
-
 ## 🏢 Support & Infrastructure
-
 
 This project is developed and executed using resources provided by:
 
-I-GUIDE Platform
+- **I-GUIDE Platform**
+- **Jetstream2 Cloud Infrastructure**
+- **Federal University of Rio Grande do Sul (UFRGS)**
+- **University of Southern California**
 
-Jetstream2 Cloud Infrastructure
-
-Federal University of Rio Grande do Sul (UFRGS)
-
-University of Southern California
 ______________________________________
 
-📄 License:
+## 📄 License
 
-This project is released under the MIT License.
+This project is released under the **MIT License**.
+
 ______________________________________
 
+## 📚 Citation
 
-📚 Citation:
+If you use or reference this repository, please cite the project as:
 
-Citation information is available in the CITATION.cff file.
+**From Mobility Intensity to Market Infrastructure: A Spatial AI Framework for Recovering Hidden Regime Structure and Multiscale Variation**
 
-If you use this project, please cite accordingly.
+Citation metadata can also be provided through a `CITATION.cff` file if needed.
