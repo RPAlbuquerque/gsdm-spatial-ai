@@ -64,6 +64,9 @@ _____________________________________________________
 
 - **cartographic_rendering_national_regime_map.ipynb**  
   Supporting notebook documenting the cartographic rendering workflow used to create the national regime map.
+  
+- **Data Dictionary - Human Mobility.xls**  
+  Data dictionary describing the human mobility indicators used in the project.
 
 - **assets/**  
   Folder containing figures, visual materials, and team images used in the repository.
